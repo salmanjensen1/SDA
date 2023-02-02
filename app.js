@@ -4,6 +4,6 @@ const app = express();
 
 const PORT = 1337;
 
-app.listen(PORT, ()=>{
+app.listen(Process.env.PORT || PORT, ()=>{
     console.log("Server running at port: ", PORT)
 })
